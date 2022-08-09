@@ -1,0 +1,601 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jan 31, 2022, 7:53:30 PM
+    Author     : Maheshwaran
+*/
+
+@font-face {
+  font-family: myFont;
+  src: url("./dist/fonts/Lato-Regular.ttf");
+}
+*, body, h1, h2, h3, h4, h5, h6 {
+    font-family: myFont;
+}
+.text-right {
+    text-align: right;
+}
+img {
+    width: 100%;
+}
+header {
+    position: relative;
+    z-index: 1;
+}
+
+.top-header {
+    border-bottom: 1px solid #018f431a;
+    padding: 5px 0;
+    background: #018f431a;
+}
+.top-header .top-text p {
+    margin: 0;
+    padding-left: 220px
+}
+.logo-wrapper .logo {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+}
+.logotext {
+    padding: 20px 0;
+}
+.logoHeading {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.logoHeading p {
+    font-size: 22px;
+    font-weight: 700;
+    color: #018f43;
+}
+.logotext h1 {
+    color: red;
+}
+.top-textLink a {
+    display: flex;
+    align-items: center;
+    margin: 0 0 0 30px;
+}
+.top-textLink a i {
+    margin-left: 5px;
+}
+
+.top-textLink {
+    display: flex;
+    justify-content: end;
+}
+.latestNewsTicker {
+    text-align: left;
+    margin: 4px 0 0 0;
+}
+.menu-wrapper {
+    background: #018f43;
+}
+.menu-wrapper .menu {
+    position: relative;
+    z-index: 1;
+    padding-left: 220px;
+}
+.logo img {
+    max-width: 215px;
+}
+.menu-wrapper .menu ul {
+    list-style: none;
+    padding: 0;
+}
+.menu-wrapper .menu ul.level1 {
+    display: flex;
+    margin: 0;
+}
+.menu-wrapper .menu ul.level1 li a {
+    display: inline-block;
+    margin: 0;
+    text-decoration: none;
+    color: #fff;
+    padding: 10px;
+    border-radius: 0px;
+    min-width: 100px;
+    text-align: center;
+}
+.menu-wrapper .menu ul.level1 li.active a, 
+.menu-wrapper .menu ul.level1 li a:hover {
+    opacity: .7;
+    background: #206942;
+}
+.slick-dotted.slick-slider {
+    margin-bottom: 0 !important;
+}
+.slider.slick-slider {
+    position: relative;
+}
+.slick-prev:before, 
+.slick-next:before {
+    color: black;
+    background: #fff;
+    padding: 10px;
+}
+.slick-prev, .slick-next {
+    width: 40px !important;
+    height: 40px !important;
+}
+.welcome-text h1 {
+    font-size: 45px;
+    text-transform: uppercase;
+    margin-top: 60px;
+}
+button.button1 {
+    border: 3px solid #51a44f;
+    background: #3e9343;
+    border-radius: 30px;
+    color: #fff;
+    padding: 7px 40px;
+}
+
+@media screen and (max-width: 992px) {
+    .menu-wrapper .menu ul.level1 {
+        display: block;
+    }
+    .slick-slide img {
+        width: auto !important;
+    }
+}
+
+
+
+.form-wrapper {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    background: linear-gradient(160deg, #4f8dff, #9132e0);
+}
+.form {
+    width: 400px;
+    background: #fff;
+    padding: 20px;
+    margin: 10px;
+}
+.field-wrapper {
+    margin-bottom: 30px;
+}
+
+.field-wrapper input {
+    width: 100%;
+    border: 1px solid #cccccc47;
+    padding: 6px;
+    background: #cccccc47;
+    outline: none;
+}
+
+.form h3 {
+    margin-bottom: 20px;
+}
+.btn-wrapper {
+    margin-bottom: 40px;
+}
+.btn-wrapper .button {
+    border: none;
+    padding: 8px 30px;
+    background: linear-gradient(450deg, #4f8dff, #9132e0);
+    color: #fff;
+    width: 100%;
+    border-radius: 30px;
+}
+.btn-wrapper .button:hover {
+    background: linear-gradient(170deg, #4f8dff, #9132e0);
+}
+
+.bg-main {
+    background: linear-gradient(45deg, #42a8ff, #1776e1);
+}
+
+.sidebar {
+    box-shadow: 0px 0px 40px #cccc;
+}
+.sideLogo img {
+    max-width: 230px;
+    margin: auto;
+    display: block;
+    padding: 10px;
+    border-radius: 110px;
+}
+.side-menu ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.side-menu ul li {
+    margin: 0 0 1px 0;
+}
+
+.side-menu ul li a {
+    text-decoration: none;
+    color: #393939;
+    padding: 15px 20px;
+    border-left: 5px solid transparent;
+    display: block;
+    font-weight: 500;
+}
+
+.side-menu ul li.active a, .side-menu ul li:hover a {
+    border-left: 5px solid #507cde;
+    color: #507cde;
+}
+.row.dashboardRow > .col {
+    padding: 0;
+}
+
+/*.welcomeText {
+    background: linear-gradient(45deg, #1978e2, #002146);
+    color: #fff;
+    padding: 10px;
+    box-shadow: 10px 10px 10px #ccc;
+}
+.welcomeText h1 {
+    font-size: 30px;
+    margin: 0;
+    padding: 0;
+}*/
+.admin-content {
+    background: #fff;
+    height: calc(100% - 76px);
+    padding: 15px;
+    border-left: 1px solid #ccc;
+}
+.admin-content h1 {
+    font-size: 24px;
+    font-weight: 700;
+    display: inline-block;
+}
+.footer-content {
+    background: linear-gradient(45deg, #3ba0fa, #1878e2);
+    color: #fff;
+    padding: 8px;
+}
+.cardInfo {
+    display: inline-block;
+    padding: 20px;
+    border: 5px solid #afcfff;
+    border-radius: 10px;
+    background: linear-gradient(45deg, #2d80ff,#565e95);
+    color: #fff;
+}
+
+.tableWrapper {
+    overflow-x: scroll;
+}
+.tableWrapper tr {
+    display: flex;
+    justify-content: center;
+}
+
+.tableWrapper table {
+    display: block;
+    width: 1200px;
+}
+
+.tableWrapper table > thead,
+.tableWrapper table > tbody {
+    display: block;
+}
+
+.tableWrapper tr td, 
+.tableWrapper tr th {
+    flex: 1;
+    border: 1px solid #ccc;
+    padding: 3px;
+    word-break: break-word;
+}
+
+
+
+/*  Profile Page Starts */
+
+.profileSidecontent {
+    background: #fff;
+    text-align: center;
+    border: 1px solid #ccc;
+    padding: 10px !important;
+}
+
+.profileMaincontent {
+    padding: 0 20px !important;
+}
+.allMemberTable button {
+    margin: 0 2px;
+}
+
+button, 
+input[type='submit'],
+input[type='reset'],
+input[type='button'] {
+    border: none;
+    color: #fff;
+    padding: 5px 15px;
+    transition: .3s all;
+}
+button:hover,
+input[type='submit']:hover,
+input[type='reset']:hover,
+input[type='button']:hover {
+    
+}
+
+.btn1 {
+    background: linear-gradient(45deg, #08864b, #005a5e);
+}
+.btn2 {
+    background: linear-gradient(45deg, #42a8ff, #1776e1);
+}
+.btn3 {
+    background: linear-gradient(45deg, #ff75a6, #e400b2);
+}
+
+
+.card {
+    box-shadow: 0 9px 12px -2px rgb(0 0 0 / 23%), 0 2px 4px -1px rgb(0 0 0 / 21%);
+    border: 1px solid #ccccccab;
+}
+
+
+/* Form styles */
+.navbar-vertical .nav-item .nav-link {
+    border-radius: 0 !important;
+}
+
+.bg-gradient-primary {
+    background-image: linear-gradient(195deg, #042f5f 0%, #0d4f98 100%);
+}
+
+.form-container,
+.table-container  {
+    position: relative;
+    border-radius: 0;
+}
+.form-container .input-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.form-container .input-wrapper .form-label {
+    position: absolute;
+    line-height: 1.5rem;
+    margin: 0;
+    padding: 0 5px;
+    top: -10px;
+    left: 10px;
+    transition: .3s all ease;
+    background: white;
+}
+.form-container .input-wrapper .form-control {
+    border: 2px solid #ccc;
+    padding: 8px 10px;
+    border-radius: 0;
+}
+.form-container .input-wrapper.focusedState .form-control {
+    border-color: #000;
+}
+.form-container .input-wrapper.emptyState .form-control {
+    /* border-color: red; */
+}
+.form-container .input-wrapper.successState .form-control {
+    /* border-color: green; */
+}
+.form-container .input-wrapper.focusedState .form-label {
+    color: #000;
+}
+.form-container .input-wrapper.emptyState .form-label {
+    /* color: red; */
+}
+.form-container .input-wrapper.successState .form-label {
+    /* color: green; */
+}
+.form-container .form-title,
+.table-container .table-title {
+    position: relative;
+    height: 30px;
+}
+.form-container .form-title h2,
+.table-container .table-title h2 {
+    font-size: 20px;
+    background: linear-gradient(195deg, #EC407A 0%, #D81B60 100%);
+    padding: 8px 15px;
+    position: absolute;
+    left: 0;
+    line-height: 1;
+    color: #fff;
+    top: -45px;
+}
+.button-wrapper input {
+    min-width: 150px;
+    margin: 0 10px;
+}
+
+.service-wrapper .welcomeText {
+    max-width: 800px;
+    margin: 0 auto;
+}
+.service-card {
+    border: 1px solid #cccccc9c;
+    padding: 10px;
+    margin: 0 0 10px 0;
+}
+
+.service-card a {
+    display: block;
+    font-weight: 700;
+    color: #fff;
+    background: #018f43;
+    padding: 5px 10px;
+}
+.section-title {
+    font-size: 26px;
+    color: #000;
+    margin: 30px 0;
+    display: inline-flex;
+    position: relative;
+}
+
+.section-title:before {
+    content: "";
+    width: 40px;
+    height: 4px;
+    background: red;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+}
+
+#services {
+    
+}
+#services .service-blocks {
+    display: flex;
+}
+#services .service-block figure {
+    border: 1px solid #cccccc8a;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 10px 10px 10px #ccc3;
+    transition: 0.5s all ease;
+}
+
+#services .service-block figure:hover {
+    transform: translate(0, -10px);
+    background: #e8fff5;
+}
+.service-card1 {
+    background: linear-gradient(45deg, #018f68, #0d2518);
+    color: #fff;
+    padding: 20px;
+}
+
+.service-card1 span {
+    display: inline-block;
+    font-size: 44px;
+    font-weight: 800;
+}
+
+.side-links {
+    margin: 20px 0 0 0;
+}
+
+.side-links a {
+    display: flex;
+    background: #ff2a2a;
+    margin: 10px 0;
+    padding: 10px;
+    font-weight: 800;
+    color: #fff;
+    align-items: center;
+}
+
+.side-links a i {
+    display: inline-block;
+    margin: 0 10px 0 0px;
+}
+footer {
+    background: #018f43;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    margin: 50px 0 0 0;
+}
+
+footer p {
+    margin: 0;
+}
+.menuIcon {
+    display: none;
+}
+.menuIcon {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.menuIcon span {
+    display: block;
+    background: red;
+    color: #fff;
+    cursor: pointer;
+    padding: 10px;
+}
+@media (max-width: 992px) {
+    .menuIcon {
+        display: block;
+        right: 0px;
+        top: 90px;
+        z-index: 2;
+    }
+    .top-header {
+        text-align: center;
+    }
+    .logo-wrapper .logo {
+        text-align: center;
+        position: relative;
+    }
+    .top-header .top-text p {
+        padding: 4px;
+    }
+    .top-textLink {
+        justify-content: center;
+    }
+    .top-textLink a {
+        flex-flow: column-reverse;
+        margin: 0 0 0 20px;
+    }
+    .top-header .container {
+        padding: 0;
+    }
+    .logoHeading p {
+        font-size: 16px;
+    }
+    .logo img {
+        max-height: 185px;
+    }
+    .logotext {
+        text-align: center;
+        padding: 0;
+    }
+
+    .logotext h1 {
+        font-size: 20px;
+    }
+    .menu-wrapper .menu {
+        padding: 0;
+    }
+    .menu-wrapper .menu ul.level1 li a {
+        display: block;
+        text-align: left;
+    }
+    .container-fluid .container {
+        padding: 0;
+    }
+    .menu-wrapper .menu ul.level1 li.active a, .menu-wrapper .menu ul.level1 li a:hover {
+        background: transparent;
+        opacity: 1;
+    }
+    .menu-wrapper1 {
+        position: absolute;
+        top: 90px;
+        left: -50px;
+        background: #018f43;
+        bottom: 0;
+        height: 100vh;
+        z-index: 1;
+        width: 0;
+        transition: .5s all ease;
+    }
+    .toggleMenuOpen .menu-wrapper1 {
+        left: 0;
+        width: 100%;
+        right: 0;
+    }
+}
